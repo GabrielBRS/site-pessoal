@@ -3,11 +3,12 @@
     flex-direction: row;
     width: 100%;
     height: 80px;
-    border-bottom: 2px solid #16db65;
+    border-bottom: 1px solid #696e79;
 
     a{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: none;
+        cursor: pointer;
         &:hover{
             color: #000;
         }
@@ -24,12 +25,11 @@
             flex-direction: row;
             width: 100%;
             height: 100%;
-            color: #16db65;
-            //justify-content: center;
             align-items: center;
             align-self: center;
             justify-content: center;
         }
+        
     }
 
     .division-second{
@@ -39,22 +39,27 @@
         height: 100%;
         justify-content: center;
 
-        .buttom{
-            display: flex;
-            flex-direction: row;
-            height: 50%;
-            width: 10%;
-            color: #16db65;
-            align-items: center;
-            align-self: center;
-            gap: 10px;
-
-            &:hover{
-              color: aliceblue;
-              cursor: pointer;
-            }
-          
-
-        }
+        
     }
+}
+
+.buttom{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 10%;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #01c38d;
+    &:hover{
+      background-color: #01c38d;
+      color: #191e29;
+      transition: all 1.5s;
+    }
+
 }

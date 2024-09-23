@@ -1,4 +1,11 @@
 <div class="aula">
-    <p>aula works!</p>
+    <div class="sub-nav">
+        <a class="buttom" routerLink="/aulas/concurso" routerLinkActive="active">
+            <p>Concurso</p>
+        </a>
+        <a class="buttom" routerLink="/aulas/dev-wiki" routerLinkActive="active">
+            <p>Dev Wiki</p>
+        </a>
+    </div>
+    <router-outlet></router-outlet>
 </div>
-<app-footer></app-footer>

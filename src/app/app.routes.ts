@@ -5,12 +5,16 @@ import { ConcursoComponent } from './concurso/concurso.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { AulaComponent } from './aula/aula.component';
 import { ConsultoriaComponent } from './consultoria/consultoria.component';
+import { ContatoComponent } from './contato/contato.component';
 
 export const routes: Routes = [
     {path:'', component:HomeComponent},
-    {path:'dev-wiki', component: DevWikiComponent},
-    {path:'concurso', component: ConcursoComponent},
     {path:'projetos', component: ProjetosComponent},
-    {path:'aulas', component: AulaComponent},
-    {path:'consultoria', component: ConsultoriaComponent},
+    {path:'aulas', component: AulaComponent, children:[
+        {path:'', component:ConcursoComponent},
+        {path:'concurso', component:ConcursoComponent},
+        {path:'dev-wiki', component: DevWikiComponent},
+    ]},
+    {path:'pericia-judicial', component: ConsultoriaComponent},
+    {path:'contato', component: ContatoComponent},
 ];
